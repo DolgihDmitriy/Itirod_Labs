@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registration.css">
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="registration-popup">
+        <div class="registration-popup__container">
+            <div class="close-elem">
+                <button class="close-elem__button button">
+                    <div class="button__inner">+</div>
+                </button>
+            </div>
+            <div class="registration-popup__text">Registration</div>
+            <form action="#" class="registration-popup__form">
+                <div class="registration-popup__data">
+                    <label for="name" class="registration-popup__data-label">Name</label>
+                    <input type="text" id="name" class="registration-popup__data-input" required>
+                </div>
+                <div class="registration-popup__data">
+                    <label for="email" class="registration-popup__data-label">Email</label>
+                    <input type="text" id="email" class="registration-popup__data-input" required>
+                </div>
+                <div class="registration-popup__data">
+                    <label for="password" class="registration-popup__data-label">Password</label>
+                    <input type="password" id="password" class="registration-popup__data-input data-input" required>
+                    <img src="images/eye-close.png" class="data-input__eye" id="showPassword" alt="eye">
+                </div>
+                <div class="registration-popup__data">
+                    <label for="passwordConfirm" class="registration-popup__data-label">Confirm password</label>
+                    <input type="password" id="passwordConfirm" class="registration-popup__data-input data-input" required>
+                    <img src="images/eye-close.png" class="data-input__eye" id="eyeicon" alt="eye">
+                </div>
+                <div class="registration-popup__button button">
+                    <!-- <div class="btn__inner"></div> -->
+                    <button type="submit" class="button__register">Register</button>
+                </div>
+                <div class="text-login login">Already have account? <a href="login.html" class="login__link">Login now</a></div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let showPassword = document.getElementById("showPassword");
+        let passwordField = document.getElementById("password");
+
+        let eyeicon = document.getElementById("eyeicon");
+        let passwordConfirm = document.getElementById("passwordConfirm");
+
+        showPassword.onclick = function(){
+            if(passwordField.type == "password"){
+                passwordField.type = "text";
+                showPassword.src = "images/eye-open.png";
+            }else{
+                passwordField.type = "password";
+                showPassword.src = "images/eye-close.png";
+            }
+        }
+
+        eyeicon.onclick = function(){
+            if(passwordConfirm.type == "password"){
+                passwordConfirm.type = "text";
+                eyeicon.src = "images/eye-open.png";
+            }else{
+                passwordConfirm.type = "password";
+                eyeicon.src = "images/eye-close.png";
+            }
+        }
+    </script>
+    
+
+
+</body>
+
+</html>

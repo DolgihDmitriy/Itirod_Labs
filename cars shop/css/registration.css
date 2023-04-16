@@ -1,0 +1,197 @@
+.registration-popup__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.registration-popup__text {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.registration-popup__form {
+  margin-top: -20px;
+}
+
+.registration-popup__data {
+  height: 40px;
+  width: 100%;
+  margin: 30px 0;
+  position: relative;
+}
+
+.data-input__eye {
+  width: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.registration-popup__data-label {
+  font-size: 16px;
+}
+
+.registration-popup__data-input {
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 1px solid lightgrey;
+}
+
+.registration-popup__data-input:focus {
+  border-color: #3498db;
+}
+
+.registration-popup__button {
+  margin: 50px 0 20px 0;
+  height: 45px;
+  width: 100%;
+}
+
+.button__register {
+  height: 100%;
+  width: 100%;
+  background: lightblue;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.registration-popup__button :hover {
+  background: rgb(63, 119, 224);
+  transition: all 0.4s;
+}
+
+.text-login {
+  text-align: center;
+  width: 100%;
+}
+
+.login__link {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.login__link:hover {
+  text-decoration: underline;
+}
+
+.close-elem {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.close-elem__button {
+  border-radius: 50%;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  text-align: center;
+  border: 1px solid #00000000;
+  background: #fff;
+}
+
+.close-elem__button:hover {
+  background: lightblue;
+  transition: all 0.4s;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.button__inner {
+  font-size: 30px;
+  font-weight: 600;
+  transform: rotate(45deg);
+  position: relative;
+  top: -1px;
+}
+
+.registration-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 999;
+}
+
+.registration-popup.active {
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+
+.registration-popup-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.5s all;
+  pointer-events: none;
+}
+
+.registration-popup-bg.active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+
+@media (max-width: 540px) {
+  .registration-popup__container {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 420px) {
+  .registration-popup__container {
+    max-width: 300px;
+    padding: 20px 10px 10px 10px;
+  }
+
+  .registration-popup__text {
+    font-size: 25px;
+  }
+
+  .registration-popup__data-label {
+    font-size: 16px;
+  }
+
+  .registration-popup__data {
+    height: 40px;
+    margin: 30px 0;
+  }
+
+  .registration-popup__button {
+    margin: 50px 0 20px 0;
+    height: 40px;
+    width: 100%;
+  }
+
+  .button__register {
+    font-size: 16px;
+  }
+
+  .close-elem {
+    right: 10px;
+    top: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .registration-popup__container {
+    max-width: 280px;
+  }
+}

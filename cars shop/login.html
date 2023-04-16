@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-popup">
+        <div class="login-popup__container container">
+            <div class="close-elem">
+                <button class="close-elem__btn btn">
+                    <div class="btn__inner">+</div>
+                </button>
+            </div>
+            <div class="container__text">Login</div>
+            <form action="#" class="form">
+                <div class="form__data">
+                    <label for="email" class="form__data-label">Email</label>
+                    <input type="text" id="email" class="form__data-input" required>
+                </div>
+                <div class="form__data">
+                    <label for="password" class="form__data-label">Password</label>
+                    <input type="password" id="password" class="form__data-input data-input" required>
+                    <img src="images/eye-close.png" class="data-input__eye" id="showPassword" alt="eye">
+                </div>
+                <div class="form__button button">
+                    <!-- <div class="btn__inner"></div> -->
+                    <button type="submit" class="button__login">Login</button>
+                </div>
+                <div class="signup-text text">Not a member? <a href="registration.html" class="text__link">Signup now</a></div>
+            </form>
+        </div>
+    </div>
+    <script>
+        let showPassword = document.getElementById("showPassword");
+        let passwordField = document.getElementById("password");
+
+        showPassword.onclick = function(){
+            if(passwordField.type == "password"){
+                passwordField.type = "text";
+                showPassword.src = "images/eye-open.png";
+            }else{
+                passwordField.type = "password";
+                showPassword.src = "images/eye-close.png";
+            }
+        }
+    </script>
+    
+</body>
+</html>

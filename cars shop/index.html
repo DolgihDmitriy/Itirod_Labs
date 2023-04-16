@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/registration.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+  <section class="login-section">
+    <div class="login-popup">
+      <div class="login-popup__container">
+          <div class="close-elem">
+              <button class="close-elem__btn btn">
+                  <div class="btn__inner">+</div>
+              </button>
+          </div>
+          <div class="login-popup__text">Login</div>
+          <form action="#" class="login-popup__form">
+              <div class="login-popup__data">
+                  <label for="email" class="login-popup__data-label">Email</label>
+                  <input type="text" id="email" class="login-popup__data-input" required>
+              </div>
+              <div class="login-popup__data">
+                  <label for="password" class="login-popup__data-label">Password</label>
+                  <input type="password" id="password" class="login-popup__data-input data-input" required>
+                  <img src="images/eye-close.png" class="data-input__eye" id="showPassword" alt="eye">
+              </div>
+              <div class="login-popup__button button">
+                  <!-- <div class="btn__inner"></div> -->
+                  <button type="submit" class="button__login">Login</button>
+              </div>
+              <div class="signup-text text">Not a member? <a href="#" class="text__link">Signup now</a></div>
+          </form>
+      </div>
+    </div>
+    <div class="login-popup-bg">
+    </div>
+  </section>
+  <section class="register-section">
+    <div class="registration-popup">
+      <div class="registration-popup__container">
+          <div class="close-elem">
+              <button class="close-elem__button btn">
+                  <div class="button__inner">+</div>
+              </button>
+          </div>
+          <div class="registration-popup__text">Registration</div>
+          <form action="#" class="registration-popup__form">
+              <div class="registration-popup__data">
+                  <label for="name" class="registration-popup__data-label">Name</label>
+                  <input type="text" id="name" class="registration-popup__data-input" required>
+              </div>
+              <div class="registration-popup__data">
+                  <label for="email" class="registration-popup__data-label">Email</label>
+                  <input type="text" id="email" class="registration-popup__data-input" required>
+              </div>
+              <div class="registration-popup__data">
+                  <label for="firstPassword" class="registration-popup__data-label">Password</label>
+                  <input type="password" id="firstPassword" class="registration-popup__data-input data-input" required>
+                  <img src="images/eye-close.png" class="data-input__eye" id="firstEye" alt="eye">
+              </div>
+              <div class="registration-popup__data">
+                  <label for="passwordConfirm" class="registration-popup__data-label">Confirm password</label>
+                  <input type="password" id="passwordConfirm" class="registration-popup__data-input data-input" required>
+                  <img src="images/eye-close.png" class="data-input__eye" id="eyeicon" alt="eye">
+              </div>
+              <div class="registration-popup__button button">
+                  <!-- <div class="btn__inner"></div> -->
+                  <button type="submit" class="button__register">Register</button>
+              </div>
+              <div class="text-login login">Already have account? <a href="#" class="login__link">Login now</a></div>
+          </form>
+      </div>
+    </div>
+    <div class="registration-popup-bg">
+    </div>
+  </section>
+
+  <div class="wrapper">
+    <header class="header header-main">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="images/logo1.svg" alt="">
+          </a>
+          <nav class="menu">
+            <button class="menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="new-cars.html">NEW CARS</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#why-buy">INFO</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="test-drive.html">TEST-DRIVE</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link menu__list-popup" href="#">LOGIN</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link menu__list-reg" href="#">REGISTER</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="top">
+        <div class="container">
+          <h1 class="title">
+            Buying in D&M
+          </h1>
+          <a class="top__link" href="new-cars.html">
+            FIND A CAR
+          </a>
+        </div>
+      </section>
+      <div class="slider">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(images/slide-1.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(images/slide-2.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(images/slide-1.jpg);"></div>
+            <div class="swiper-slide" style="background-image: url(images/slide-2.jpg);"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <section class="why-buy">
+        <div class="container">
+          <h2 class="section-title" id="why-buy">
+            Why Buy in D&M?
+          </h2>
+          <ul class="why-buy__list">
+            <li class="why-buy__item">
+              <img class="why-buy__item-img" src="images/why-buy-1.svg" alt="">
+              <h3 class="why-buy__item-title">
+                Top Dealers
+              </h3>
+              <p class="why-buy__item-text">
+                TrueCar Certified Dealers compete for your business by providing discounted pricing on in-stock
+                inventory.
+              </p>
+            </li>
+            <li class="why-buy__item">
+              <img class="why-buy__item-img" src="images/why-buy-2.svg" alt="">
+              <h3 class="why-buy__item-title">
+                Discounted Price
+              </h3>
+              <p class="why-buy__item-text">
+                View local inventory from the comfort of home and get access to guaranteed savings on the car of your
+                choice.
+              </p>
+            </li>
+            <li class="why-buy__item">
+              <img class="why-buy__item-img" src="images/why-buy-3.svg" alt="">
+              <h3 class="why-buy__item-title">
+                Lower Payments
+              </h3>
+              <p class="why-buy__item-text">
+                Get discounted pricing when you shop for a car or truck using TrueCar and save on your lease payment.
+              </p>
+            </li>
+            <li class="why-buy__item">
+              <img class="why-buy__item-img" src="images/why-buy-4.svg" alt="">
+              <h3 class="why-buy__item-title">
+                Easy Upgrade
+              </h3>
+              <p class="why-buy__item-text">
+                Easy to upgrade to the newest vehicle model every few years if you would like to be modern and
+                comfortable
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="video">
+        <div class="container">
+          <h2 class="section-title video__title">
+            WELCOME TO D&M
+          </h2>
+          <p class="video__text">
+            Find out how easy it is to buy in D&M
+          </p>
+          <iframe class="video__content" width="800" height="400" src="https://www.youtube.com/embed/lq149gCzkvE?controls=0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </section>
+      <section class="important">
+        <div class="container">
+          <h2 class="section-title important__title">
+            Important Things to Consider
+          </h2>
+          <p class="important__text">
+            Depending on your circumstances and what is important to you, a purchase could be a great option for your next vehicle.
+            Below are some important factors that may influence your decision.
+          </p>
+          <ul class="important__list">
+            <li class="important__item">
+              <img class="important__item-img" src="images/imp-1.jpg" alt="">
+              <p class="important__item-text">
+                Before heading to a car dealer in your city, it’s a good idea to think about how much you can realistically afford to spend on a new car, and whether a car loan would be appropriate for your circumstances.
+              </p>
+            </li>
+            <li class="important__item">
+              <img class="important__item-img" src="images/imp-2.jpg" alt="">
+              <p class="important__item-text">
+                Quite often this question comes down to budget, but there are other considerations when it comes to purchasing a new or second–hand vehicle.
+              </p>
+            </li>
+            <li class="important__item">
+              <img class="important__item-img" src="images/imp-3.jpg" alt="">
+              <p class="important__item-text">
+                Take a minute to think about exactly what you need from your car. For example, if you’re a tradie with a lot of tools then a convertible may not be the best solution for you. Similarly, if you’re a family of 6 then a minivan or SUV will be a better option than a small hatchback.
+              </p>
+            </li>
+            <li class="important__item">
+              <img class="important__item-img" src="images/imp-4.jpg" alt="">
+              <p class="important__item-text">
+                Every make and model of car will have a different set of expenses associated with the upkeep. When choosing your car, consider the cost of maintenance such as servicing and tyre replacement.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <p class="footer__menu-title">Products</p>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Used</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">New</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Sell your car</a>
+            </li>
+          </ul>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <p class="footer__menu-title">Resources</p>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Blog</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">FAQ</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Contact us</a>
+            </li>
+          </ul>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <p class="footer__menu-title">Work With TrueCar</p>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Dealers</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Partners</a>
+            </li>
+          </ul>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <p class="footer__menu-title">About</p>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">About us</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Team</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#">Careers</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="app">
+          <li class="app__item">
+            <a class="app__item-link" href="#">
+              <img class="app__item-img" src="images/appstore.svg" alt="">
+            </a>
+          </li>
+          <li class="app__item">
+            <a class="app__item-link" href="#">
+              <img class="app__item-img" src="images/googleplay.svg" alt="">
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copy">
+          <p class="footer__copy-text">
+            For questions about the TrueCar Auto Buying Service please call 1-888-878-3227.
+            Certified Dealers are contractually obligated by TrueCar to meet certain customer service requirements and
+            complete the
+            TrueCar Dealer Certification Program.
+          </p>
+          <p class="footer__copy-text">
+            TrueCar does not broker, sell, or lease motor vehicles. Unless otherwise noted, all vehicles shown on this
+            website are
+            offered for sale by licensed motor vehicle dealers. All vehicles are subject to prior sale. By accessing
+            this website,
+            you agree to the TrueCar Terms of Service and Privacy Policy.
+          </p>
+        </div>
+        <nav class="copy__nav">
+          <ul class="copy__nav-list">
+            <li class="copy__nav-item">
+              <a class="copy__nav-link" href="#">Terms of Service</a>
+            </li>
+            <li class="copy__nav-item">
+              <a class="copy__nav-link" href="#">Privacy Policy</a>
+            </li>
+            <li class="copy__nav-item">
+              <a class="copy__nav-link" href="#">Do Not Sell My Personal Information</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/login-popup.js"></script>
+  <script src="js/registration-popup.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

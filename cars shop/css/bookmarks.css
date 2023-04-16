@@ -1,0 +1,133 @@
+.bookmarks-main{
+    flex-grow: 1;
+    background-color: #BDCFD3;
+}
+
+.bookmarks{
+    max-width: 1020px;
+    margin: 0 auto;
+    padding-top: 30px;
+    margin-bottom: 190px;
+    position: relative;
+}
+
+.bookmarks__title{
+    font-size: 48px;
+    font-weight: 700;
+    position: absolute;
+    left: 10px;
+}
+
+.bookmarks__item{
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px 10px 10px;
+    display: flex;
+    gap: 30px;
+    border-bottom: 2px solid gray;
+}
+
+.item-first{
+    margin-top: 150px;
+}
+
+.item__image{
+    height: 100%;
+    width: 100%;
+}
+
+.bookmarks__item-car-name{
+    font-size: 22px;
+    font-weight: 700;
+    width: 45%;
+}
+
+.item__link{
+    transition: 0.3s ease;
+}
+
+.item__link:hover{
+    color: #0066FF;
+}
+
+.bookmarks__item-short-desc{
+    font-size: 18px;
+    word-break: break-all;
+}
+
+.bookmarks__item-price{
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item__trash{
+    width: 20px;
+    height: 25px;
+}
+
+.item__trash:hover{
+    -webkit-filter: sepia(1) hue-rotate(320deg) saturate(10);
+    filter: sepia(1) hue-rotate(320deg) saturate(10);  
+    cursor: pointer;
+}
+
+.bookmarks__item-delete-icon{
+    padding-top: 5px;
+}
+
+@media (max-width: 1020px){
+    .bookmarks__title{
+        font-size: 38px;
+    }
+    .bookmarks__item-car-name{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .bookmarks__item-short-desc{
+        font-size: 16px;
+    }
+    .bookmarks__item-price{
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .bookmarks__item{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 5px;
+    }
+    .bookmarks__item-image{
+        order: 3;
+        padding: 5px 0;
+    }
+    .bookmarks__item-delete-icon{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .bookmarks__item-short-desc{
+        order: 4;
+    }
+    .bookmarks__title{
+        font-size: 28px;
+    }
+    .item-first{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 430px) {
+    .bookmarks__item-car-name{
+        width: 100%;
+    }
+}
+
+@media (max-width: 340px) {
+    .bookmarks__item-short-desc{
+        font-size: 14px;
+    }
+}
